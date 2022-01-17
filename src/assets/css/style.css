@@ -63,6 +63,7 @@
 }
 
 .notifications .date {
+  margin-left: 15px;
   color: #777;
   font-weight: bold;
   font-size: 13pt;
@@ -73,6 +74,11 @@ html[dir="ltr"] .notifications {
 }
 
 html[dir="ltr"] .notifications .show-case .number {
+  margin-left: 0;
+  margin-right: 15px;
+}
+
+html[dir="ltr"] .notifications .date {
   margin-left: 0;
   margin-right: 15px;
 }
