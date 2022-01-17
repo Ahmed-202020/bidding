@@ -1,0 +1,114 @@
+.notifications{
+    padding: 20px 10px 20px 5px;
+    background-color: $white;
+    width: 700px;
+    margin: auto;
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    .show-case{
+        display: flex;
+        align-items: center;
+        .number{
+            margin-left: 15px;
+            background-color: $min-color;
+            text-align: center;
+            width: 80px;
+            height: 80px;
+            line-height: 80px;
+            border-radius: 10px;
+            -webkit-border-radius: 10px;
+            -moz-border-radius: 10px;
+            -ms-border-radius: 10px;
+            -o-border-radius: 10px;
+            span{
+                color: $white;
+                font-size: 25pt;
+            }
+        }
+        .welcoming{
+            h5{
+                color: $black;
+            }
+        }
+    }
+    .date{
+        color: #777;
+        font-weight: bold;
+        font-size: 13pt;
+    }
+}
+
+// ltr
+html[dir = "ltr"]{
+    .notifications{
+        padding: 20px 5px 20px 10px;
+        .show-case{
+            .number{
+                margin-left: 0;
+                margin-right: 15px;
+            }
+        }
+    }
+}
+
+// responsive-design 
+
+@media (max-width: 575.98px){
+    .notifications{
+        width: 500px;
+    }
+}
+@media (min-width: 360px) and (max-width: 420px){
+    .notifications{
+        width: 340px;
+        .show-case{
+            .number{
+                width: 60px;
+                height: 60px;
+                line-height: 60px;
+                span{
+                    font-size: 20pt;
+                }
+            }
+            .welcoming{
+                h5{
+                    font-size: 10pt;
+                }
+            }
+        }
+        .date{
+            font-size: 9pt;
+        }
+    }
+}
+@media (min-width: 280px) and (max-width: 350px){
+    .notifications{
+        width: 270px;
+        .show-case{
+            .number{
+                width: 50px;
+                height: 50px;
+                line-height: 50px;
+                span{
+                    font-size: 18pt;
+                }
+            }
+            .welcoming{
+                h5{
+                    font-size: 9pt;
+                }
+            }
+        }
+        .date{
+            font-size: 7pt;
+        }
+    }
+}
+
